@@ -2,6 +2,7 @@ import { View, Text, Animated, Alert, KeyboardAvoidingView, Platform, StyleSheet
 import React, { useState, useEffect, useRef } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
 
 import ChoiceInput from "../components/Input/ChoiceInput";
 import ClearHistoryButton from "../components/Button/ClearHistoryButton";
@@ -73,6 +74,7 @@ export default function HomeScreen() {
 
   return (
       <SafeAreaView style={styles.container}>
+      <StatusBar style="auto" hidden />
       <Text style={styles.title}>Now or Never</Text>
     
     
