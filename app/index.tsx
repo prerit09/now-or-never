@@ -84,7 +84,7 @@ export default function HomeScreen() {
 
       <Text style={styles.hint}>{isLocked ? "Wait for the result to reset..." : "Tap the button to decide!"}</Text>
 
-      <Text style={styles.historyTitle}>Past Decisions:</Text>
+      {history.length > 0 && <Text style={styles.historyTitle}>Past Decisions:</Text>}
 
       <HistoryList data={history} />
 
